@@ -3,63 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <style>
-    /* --------------------
-     Add your styling here
-     -------------------- */
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="calc.js"></script>
 </head>
 <body>
-  <h1>Simple Calculator<h1>
-    
-<div class="calculator">
- <table>
-   
-  <tr>
-    <th>
-      <button>8</button>
-      <button>5</button>
-      <button>9</button>
-      <button>x</button>
-    </th>
-  <tr>
-    
-  <tr>
-    <th>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>-</button>
-    </th>
-  <tr>
+  <h1>Simple Calculator<h1></h1>
 
-  <tr>
-    <th>
-      <button onclick='myFunction()'>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>+</button>
-    </th>
-  <tr>
+  <form name="calculator">
+    <table>
+      <tr>
+        <input type="text" name="display" disabled>
+      </tr>
+
+      <tr>
+        <th><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></input></th>
+        <th><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></input></th>
+        <th><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></input></th>
+        <th><input type="button" name="plus"class="operator" value="+" onclick="calculator.display.value += '+'"></input></th>
+      </tr>
+      <tr>
+        <th><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></input></th>
+        <th><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></input></th>
+        <th><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></input></th>
+        <th><input type="button" name="minus"class="operator" value="-" onclick="calculator.display.value += '-'"></input></th>
+      </tr>
+      <tr>
+        <th><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></input></th>
+        <th><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></input></th>
+        <th><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></input></th>
+        <th><input type="button" name="times"class="operator" value="x" onclick="calculator.display.value += '*'"></input></th>
+      </tr>
+      <tr>
+        <th><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></input></th>
+        <th><input type="button" name="0" value="0" onclick="calculator.display.value += '0'"></input></th>
+        <th><input type="button" name="equal" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></input></th>
+        <th><input type="button" name="divide"class="operator" value="/" onclick="calculator.display.value += '/'"></input></th>
+      </tr>
+
+    </table>
+  </form>
     
-  <tr>
-    <th>
-      <button>C</button>
-      <button>0</button>
-      <button>.</button>
-      <button>=</button>
-    </th>
-  <tr>
-    
-</div>
-    
-    
-    
-<script>
-  var myFunction = () => {
-    console.log('hi')
-    console.log(document.button)
-  }
-</script>
 </body>
 </html>

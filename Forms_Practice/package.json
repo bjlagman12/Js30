@@ -4,12 +4,18 @@
   "description": "forms",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "build": "babel client/index.jsx --watch --out-file ./public/bundle.js --presets @babel/preset-react --s-maps inline"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-react": "^7.0.0"
   }
 }

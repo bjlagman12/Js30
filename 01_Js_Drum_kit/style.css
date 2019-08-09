@@ -1,3 +1,52 @@
+html {
+  background: url(https://cdn4.pitchfork.com/longform/239/kanyeartwork21865.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 body {
-  background-color: aqua
+  font-family: sans-serif;
+  margin: auto;
+  width: 80%;
+  padding: 200px 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-shadow:4px 3px 3px #000000c4;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  border: solid black 3px;
+  border-radius: 5px;
+  width: 10rem;
+  text-align: center;
+  margin: 10px;
+  background-color: #0000008c;
+  color: white;
+  text-shadow:4px 3px 3px #000000c4;
+}
+
+kbd {
+  display: block;
+  font-size: 3rem;
+}
+
+.sound {
+  font-size: 15px;
+}
+
+.sound {
+  color: #ff2f3e;
+  text-shadow:0px 0px 0px;
 }

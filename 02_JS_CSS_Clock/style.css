@@ -1,3 +1,55 @@
-html {
-  background-color: beige
+body {
+  background-color: beige;
+  font-family: sans-serif;
+}
+
+
+.clock {
+  width: 25rem;
+  height: 25rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 25px solid black;
+  margin: auto;
+  box-shadow: 0 0 20px 15px #6d6d6d8c;
+  position: relative;
+  padding: 1rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+.hand-hour {
+  top: 50%;
+  width: 50%;
+  height: 15px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(45deg);
+  transform-origin: 100%
+}
+
+.hand-minutes {
+  top: 50%;
+  width: 50%;
+  height: 15px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(180deg);
+  transform-origin: 100%
+}
+
+.hand-seconds {
+  top: 50%;
+  width: 50%;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: 100%
+
 }

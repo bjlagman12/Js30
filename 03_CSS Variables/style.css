@@ -1,3 +1,12 @@
 body {
-  background-color: beige
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.controls {
+  margin-bottom: 50px;
 }

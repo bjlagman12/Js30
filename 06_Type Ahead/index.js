@@ -26,10 +26,16 @@ function findMatches(wordToMatch, cities) {
   });
 }
 
+// get from stack overflow. conver number with commas
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 function displayMatches() {
   let group = []
   const match = findMatches(this.value, cities)
   for (var i = 0; i < match.length; i++) {
+    let place = match[i]
     // find the value 
     const regex = new RegExp(this.value, 'gi')
     // replace the that value with a span tage with h1
@@ -39,12 +45,11 @@ function displayMatches() {
     const stateName = place.state.replace(regex, `
     <span class="h1">${this.value}<span>
     `)
-    let place = match[i]
     // create a tag
     let html = `
     <li>
       <span class="name">${cityName}, ${stateName} </span>
-      <span class="population">${place.population}</span>
+      <span class="population">${numberWithCommas(place.population)}</span>
     </li>
     `
     group.push(html)

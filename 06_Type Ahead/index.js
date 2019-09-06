@@ -39,12 +39,8 @@ function displayMatches() {
     // find the value 
     const regex = new RegExp(this.value, 'gi')
     // replace the that value with a span tage with h1
-    const cityName = place.city.replace(regex, `
-    <span class="h1">${this.value}<span>
-    `)
-    const stateName = place.state.replace(regex, `
-    <span class="h1">${this.value}<span>
-    `)
+    const cityName = place.city.replace(regex, `<span class="h1">${this.value}</span>`)
+    const stateName = place.state.replace(regex, `<span class="h1">${this.value}</span>`)
     // create a tag
     let html = `
     <li>
